@@ -34,6 +34,376 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <style media="screen">
+    *,
+    *::before,
+    *::after {
+        box-sizing: border-box;
+    }
+
+    html {
+        font-family: sans-serif;
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    }
+
+    body {
+        font-family: 'Lato', sans-serif;
+        color: #ffffff;
+        font-weight: 300;
+        background: #ffffff;
+    }
+
+    a {
+        color: #ffffff;
+        font-weight: 400;
+        outline: none;
+        text-decoration: none;
+        transition: 0.5s;
+    }
+
+    a:hover,
+    a:active,
+    a:focus {
+        outline: none;
+        text-decoration: none;
+    }
+
+    p {
+        padding: 0;
+        margin: 0 0 15px 0;
+        color: #454545;
+        font-weight: 300;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        padding: 0;
+        margin: 0 0 15px 0;
+        color: #333333;
+        font-weight: 700;
+
+    }
+
+    h1 {
+        font-weight: 900;
+    }
+
+    
+
+
+
+    /**********************************/
+    /***** Layout & Section Title *****/
+    /**********************************/
+    .container {
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    @media (min-width: 576px) {
+        .container {
+            max-width: 540px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .container {
+            max-width: 720px;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .container {
+            max-width: 960px;
+        }
+    }
+
+    @media (min-width: 1200px) {
+        .container {
+            max-width: 1140px;
+        }
+    }
+
+    .team-row {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+
+    .column {
+        position: relative;
+        width: 100%;
+        padding-right: 15px;
+        padding-left: 15px;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    @media (min-width: 576px) {
+        .column {
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .column {
+            -ms-flex: 0 0 33.333333%;
+            flex: 0 0 33.333333%;
+            max-width: 33.333333%;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .column {
+            -ms-flex: 0 0 25%;
+            flex: 0 0 25%;
+            max-width: 25%;
+        }
+    }
+
+    .section-title {
+        width: 100%;
+        text-align: center;
+        padding: 45px 0 30px 0;
+    }
+
+    .section-title::after {
+        position: absolute;
+        content: "";
+        width: 50px;
+        height: 5px;
+        left: calc(50% - 25px);
+        background: #ffffff;
+    }
+
+    .section-title h1 {
+        color: #353535;
+        font-size: 50px;
+        letter-spacing: 5px;
+        margin-bottom: 5px;
+    }
+
+    @media(max-width: 767.98px) {
+        .section-title h1 {
+            font-size: 40px;
+            letter-spacing: 3px;
+        }
+    }
+
+    @media(max-width: 567.98px) {
+        .section-title h1 {
+            font-size: 30px;
+            letter-spacing: 2px;
+        }
+    }
+    .row2
+    {
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-right: 1px;
+        margin-left: -15px;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    /*****/
+    /**********************************/
+    /********* Team #10 Style *********/
+    /**********************************/
+    .team-10 {
+        text-align: center;
+        margin-bottom: 30px;
+        border-radius: 5px;
+    }
+
+    .team-10 .team-img {
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .team-10 .team-img img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .team-10 .team-content {
+        position: relative;
+        width: 90%;
+        padding: 20px;
+        margin: -60px auto 0 auto;
+        background: #ffffff;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: transform 0.6s;
+        transform-style: preserve-3d;
+        border-radius: 5px;
+    }
+
+    .team-10:hover .team-content {
+        transform: rotateY(180deg);
+    }
+
+    .team-10 .team-overlay {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        padding: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        background: #ffffff;
+        border-radius: 5px;
+        transform: rotateY(180deg);
+    }
+
+    .team-10 .team-content h2 {
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0px;
+    }
+
+    .team-10 .team-content h3 {
+        font-size: 16px;
+        font-weight: 300;
+    }
+
+    .team-10 .team-content p {
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 18px;
+    }
+
+    .team-10 .team-social {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0;
+    }
+
+    .team-10 .team-social a {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        margin-right: 5px;
+        padding: 11px 0 10px 0;
+        font-size: 16px;
+        line-height: 16px;
+        text-align: center;
+        color: #ffffff;
+        border-radius: 5px;
+        transition: all .3s;
+    }
+
+    .team-10 .team-social a.social-tw {
+        background: #00acee;
+    }
+
+    .team-10 .team-social a.social-fb {
+        background: #3b5998;
+    }
+
+    .team-10 .team-social a.social-li {
+        background: #0e76a8;
+    }
+
+    .team-10 .team-social a.social-in {
+        background: #3f729b;
+    }
+
+    .team-10 .team-social a.social-yt {
+        background: #c4302b;
+    }
+
+    .team-10 .team-social a:last-child {
+        margin-right: 0;
+    }
+
+    .team-10 .team-social a:hover {
+        background: #222222;
+    }
+
+    .fa {
+        display: inline-block;
+        font: normal normal normal 14px/1 FontAwesome;
+        font-size: inherit;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+    }
+
+    .site-footer {
+        padding: 75px 0;
+        background: #08011e;
+        text-align: center;
+    }
+
+    .footer-logo img {
+        max-width: 20%;
+    }
+
+    .footer-navigation ul,
+    .footer-social ul {
+        padding: 0;
+        margin: 32px 0 0;
+        list-style: none;
+    }
+
+    .footer-navigation li {
+        font-size: 16px;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .footer-navigation li a {
+        display: block;
+        padding: 8px 12px;
+        color: #fff;
+    }
+
+    .footer-social li a {
+        display: block;
+        width: 16px;
+        height: 22px;
+        margin: 12px;
+        color: #8f8f8f;
+        transition: all .35s;
+    }
+
+    .footer-social li a:hover {
+        color: #fff;
+    }
+    .site-navigation ul li {
+        display: block;
+        padding: 12px 24px;
+        font-size: 19px;
+        font-weight: bold;
+        letter-spacing: 0.02rem;
+        text-transform: uppercase;
+       
+    }
+    
+</style>
 </head>
 
 <body>
@@ -80,7 +450,457 @@
 
         <div class="section-title">
           <h2>About</h2>
-          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
+          <div class="container">
+            <div class="section-title">
+            </div>
+            <div class="row2">
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Jashit.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Jashit Kandhari</h2>
+                            <h3 style="font-family: 'Montserrat';">PRESIDENT</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">🌟 Meet Jashit Kandhari, the driving force behind our Cultural Committee! 🎭✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Rucha.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Rucha Soni</h2>
+                            <h3 style="font-family: 'Montserrat';">PRESIDENT</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">🌟 Meet Rucha Soni, the driving force behind our Cultural Committee! 🎭✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <!--            <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="images/Pratham the first.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Pratham Vajifdar</h2>
+                            <h3>TREASURER</h3>
+                            <div class="team-overlay">
+                                <p>💰 Meet the financial wizard behind our Cultural Committee, Pratham Vajifdar, our
+                                    Treasurer! 💼📊</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="images/Shivam.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Shivam Joshi</h2>
+                            <h3>CULTURAL HEAD</h3>
+                            <div class="team-overlay">
+                                <p>🌟 Meet Shivam Joshi, our Cultural Head and the mastermind behind the scenes! 🎭🎉
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-title">
+            </div>
+            <div class="row2">
+        <!--       <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="images/Jashit.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Jashit Kandhari</h2>
+                            <h3>PRESIDENT</h3>
+                            <div class="team-overlay">
+                                <p>🌟 Meet Jashit Kandhari, the driving force behind our Cultural Committee! 🎭✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="images/Rucha.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Rucha Soni</h2>
+                            <h3>PRESIDENT</h3>
+                            <div class="team-overlay">
+                                <p>🌟 Meet Rucha Soni, the driving force behind our Cultural Committee! 🎭✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Pratham the first.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Pratham Vajifdar</h2>
+                            <h3 style="font-family: 'Montserrat';">TREASURER</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">💰 Meet the financial wizard behind our Cultural Committee, Pratham Vajifdar, our
+                                    Treasurer! 💼📊</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Aaryan.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Aryan Pandya</h2>
+                            <h3 style="font-family: 'Montserrat';">CO-TREASURER</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">Introducing Aryan Pandya, the wizard of wealth and guardian of our cultural coffers as our Assistant Treasurer! 💰✨ 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-title">
+            </div>
+            <div class="row2">
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Jeel.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Jeel Parmar</h2>
+                            <h3 style="font-family: 'Montserrat';">CO-CULTURAL HEAD</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">Calling all culture vultures, music lovers, and creative souls! 🌟 Meet Jeel parmar, our Co-Cultural head—a whirlwind of creativity 💫 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Shivam.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Shivam Joshi</h2>
+                            <h3 style="font-family: 'Montserrat';">CULTURAL HEAD</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">🌟 Meet Shivam Joshi, our Cultural Head and the mastermind behind the scenes! 🎭🎉</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Vismay.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Vismay Jadia</h2>
+                            <h3 style="font-family: 'Montserrat';">CO-CULTURAL HEAD</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">🎩✨ With a blend of tradition and innovation will leave you breathless with our Co-Cultural head, Vismay Jadia. 🌟🎭🎉</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <!--        <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="images/Aashna.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Aashna Achary</h2>
+                            <h3>DECORATION HEAD</h3>
+                            <div class="team-overlay">
+                                <p>🌟 Meet Aashna Aacharya, the creative genius behind our Cultural Committee’s decor!
+                                    🎨✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-title">
+            </div>
+            <div class="row2">
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Suraj.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Suraj Pillai</h2>
+                            <h3 style="font-family: 'Montserrat';">MARKETING HEAD</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">📣 Meet the marketing maestro of our Cultural Committee, Suraj Pillai!🌟</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Khushi.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Khushi Taneja</h2>
+                            <h3 style="font-family: 'Montserrat';">MARKETING HEAD</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">📣 Meet the marketing maestro of our Cultural Committee, Khushi Taneja!🌟</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Niyati.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Niyati Mukul</h2>
+                            <h3 style="font-family: 'Montserrat';">MARKETING HEAD</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">📣 Meet the marketing maestro of our Cultural Committee, Niyati Mukul!🌟</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <!--        <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="images/Aashna.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Aashna Achary</h2>
+                            <h3>DECORATION HEAD</h3>
+                            <div class="team-overlay">
+                                <p>🌟 Meet Aashna Aacharya, the creative genius behind our Cultural Committee’s decor!
+                                    🎨✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-title">
+            </div>
+            <div class="row2">
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/HIya.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Hiya Shah</h2>
+                            <h3 style="font-family: 'Montserrat';">SOCIAL MEDIA HEAD</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">🌟 Meet Hiya Shah, the social media sorcerer of our Cultural Committee! ✨📸 </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Aisha.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Aisha Agwan</h2>
+                            <h3 style="font-family: 'Montserrat';">SOCIAL MEDIA HEAD</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">🌟 Meet Aisha Agwan, the creative genius behind our social media magic! 📱</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Ansh.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Ansh Dua</h2>
+                            <h3 style="font-family: 'Montserrat';">DESIGNING HEAD</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">🎨 Meet the artistic virtuoso leading our Cultural Committee's creative charge, Ansh
+                                    Dua! ✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Husena.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Husena Limdiwala</h2>
+                            <h3 style="font-family: 'Montserrat';">DESIGNING HEAD</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">🎨 Meet the artistic virtuoso leading our Cultural Committee's creative charge,
+                                    Husena Limdiwala! ✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-title">
+            </div>
+            <div class="row2">
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Karishma.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Karishma Sewani</h2>
+                            <h3 style="font-family: 'Montserrat';">OUTREACH HEAD</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">🚀 Introducing Karishma Sewani, the driving force behind our cultural outreach
+                                    efforts! 🌟🌍</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Gaurav.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Gaurav Rai</h2>
+                            <h3 style="font-family: 'Montserrat';">OUTREACH HEAD</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">🌍 Meet Gaurav Rai, the cultural connector extraordinaire! ✨🤝</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Deesha.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Deesha Jain</h2>
+                            <h3 style="font-family: 'Montserrat';">DECORATION HEAD</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">✨ Introducing Deesha Jain, the visionary leader of our Decoration Committee!
+                                    🖌️🌟</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Aashna.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Aashna Acharya</h2>
+                            <h3 style="font-family: 'Montserrat';">DECORATION HEAD</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">🌟 Meet Aashna Aacharya, the creative genius behind our Cultural Committee’s decor!
+                                    🎨✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="section-title">
+            </div>
+            <div class="row2">
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Rana.jpg" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Pratham Rana</h2>
+                            <h3 style="font-family: 'Montserrat';">CONTENT HEAD</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">Meet the wordsmith extraordinaire of our Cultural Committee, Pratham Rana, our Head
+                                    of Content! 🖋️✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="https://cdn.jsdelivr.net/gh/nuvcc/nuvyuva_website_images/images/Siddharth The sexy.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2 style="font-family: 'Montserrat';">Siddharth Deshpande</h2>
+                            <h3 style="font-family: 'Montserrat';">MEDIA HEAD</h3>
+                            <div class="team-overlay">
+                                <p style="font-family: 'Montserrat';">📸 Say hello to the visual virtuoso behind our Cultural Committee's moments,
+                                    Siddharth Deshpande, our Head of Media! 🎥✨</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    <!--            <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="images/Pratham the first.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Pratham Vajifdar</h2>
+                            <h3>TREASURER</h3>
+                            <div class="team-overlay">
+                                <p>💰 Meet the financial wizard behind our Cultural Committee, Pratham Vajifdar, our
+                                    Treasurer! 💼📊</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="team-10">
+                        <div class="team-img">
+                            <img src="images/Shivam.JPG" alt="Team Image">
+                        </div>
+                        <div class="team-content">
+                            <h2>Shivam Joshi</h2>
+                            <h3>CULTURAL HEAD</h3>
+                            <div class="team-overlay">
+                                <p>🌟 Meet Shivam Joshi, our Cultural Head and the mastermind behind the scenes! 🎭🎉
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+        <!------------------------------------------------------------------------------------------------------------->
+          <!--<p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
         </div>
 
         <div class="row">
@@ -122,7 +942,7 @@
     </section><!-- End About Section -->
 
     <!-- ======= Facts Section ======= -->
-    <section id="facts" class="facts">
+    <!--<section id="facts" class="facts">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -170,7 +990,7 @@
     </section><!-- End Facts Section -->
 
     <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skills section-bg">
+  <!--  <section id="skills" class="skills section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
