@@ -919,13 +919,13 @@
   .bxl-etsy:before {
     content: "\e92e";
   }
-  .bxl-facebook:before {
+  .bxl-youtube:before {
     content: "\e92f";
   }
-  .bxl-facebook-circle:before {
+  .bxl-youtube-circle:before {
     content: "\e930";
   }
-  .bxl-facebook-square:before {
+  .bxl-youtube-square:before {
     content: "\e931";
   }
   .bxl-figma:before {
