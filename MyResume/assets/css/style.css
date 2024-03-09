@@ -103,7 +103,53 @@ h6 {
     transform: rotate(360deg);
   }
 }
+.btn {
+  padding: 16px 46px;
+  border: 2px solid #9a24c1;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 1;
+  color: #232127;
+}
 
+.btn.gradient {
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxkZWZzPjxsaW5lYXJHcmFkaWVudCBpZD0iZ3JhZGllbnQiIHgxPSIwJSIgeTE9IjAlIiB4Mj0iMCUiIHkyPSIxMDAlIj48c3RvcCBvZmZzZXQ9IjAlIiBzdHlsZT0ic3RvcC1jb2xvcjojQUEwMEZGOyIgLz48c3RvcCBvZmZzZXQ9IjEwMCUiIHN0eWxlPSJzdG9wLWNvbG9yOiM1ODE2ODc7IiAvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IGZpbGw9InVybCgjZ3JhZGllbnQpIiBoZWlnaHQ9IjEwMCUiIHdpZHRoPSIxMDAlIiAvPjwvc3ZnPg==);
+  background-image: -webkit-gradient(linear, left top, 270deg, color-stop(0%, #AA00FF), color-stop(100%, #581687));
+  background-image: -moz-linear-gradient(270deg,#AA00FF 0%,#581687 100%);
+  background-image: -webkit-linear-gradient(270deg,#AA00FF 0%,#581687 100%);
+  background-image: -o-linear-gradient(270deg,#AA00FF 0%,#581687 100%);
+  background-image: -ms-linear-gradient(270deg,#AA00FF 0%,#581687 100%);
+  background-image: linear-gradient(270deg,#AA00FF 0%,#581687 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  position:relative;
+  display:inline-block;
+}
+
+.btn.dark-purple {
+  background: #9a24c1;
+  color: #fff;
+}
+
+.btn.dark {
+  background: #231e23;
+  border-color: transparent;
+  color: #fff;
+}
+
+.btn.gradient-bg {
+  padding: 18px 46px;
+  border: 0;
+  background: -moz-linear-gradient(180deg, rgb(45 57 145) 0%, rgb(49 59 134) 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%, rgb(36 20 121)), color-stop(100%, rgb(62 27 204)));
+  background: -webkit-linear-gradient(177deg, rgb(0 43 229) 0%, rgb(20 20 121) 100%);
+  background: -o-linear-gradient(180deg, rgb(0 1 229) 0%, rgb(27 20 121) 100%);
+  background: -ms-linear-gradient(180deg, rgb(0 9 229) 0%, rgb(23 20 121) 100%);
+  background: linear-gradient(270deg, rgb(0 9 229) 0%, rgb(153 151 169) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#581479', endColorstr='#ab00e5',GradientType=1 );
+  color: #fff;
+}
 /*--------------------------------------------------------------
 # Disable aos animation delay on mobile devices
 --------------------------------------------------------------*/
