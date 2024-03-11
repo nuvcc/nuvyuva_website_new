@@ -381,36 +381,70 @@
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
-  <style media="screen"> 
-    .hero { 
-      width: 100%; 
-      height: 100%; 
-      position: relative;
-      box-sizing: content-box; } 
-    .video-bg { 
-      position: absolute; 
-      top: 0; 
-      left: 0; 
-      min-width: 100%; 
-      min-height: 100%; 
-      z-index: -1; } 
-    .hero video { 
-      position: absolute; 
-      top: 50%; 
-      left: 50%; 
-      transform: translate(-50%, -50%); 
-      z-index: -1;
-       width: 100%; 
-       height: auto; 
-       object-fit: cover; } 
-    </style>
-  <section id="hero" class="d-flex flex-column justify-content-center"> 
-    <div id="video-bg"> <video autoplay loop muted style="height:850px;"> 
-      <source src="assets/img/BQQT1084.MP4" type="video/mp4"> </video> </div> <div class="container" data-aos="zoom-in" data-aos-delay="100">
-         <h1>NUV युवा 2024</h1> <p><a class="btn gradient-bg" href="#">register now </a><span class="typed" data-typed-items="Tech Events, E-Sports Events,Sports Events, Cultural Events,CONCERT NIGHT"></span></p> <div class="social-links"> <a href="https://www.linkedin.com/in/nuv-cultural-committee/" class="linkedin"><i class="bx bxl-linkedin"></i></a> <a href="https://www.youtube.com/@NUVCulturalCommittee" class="youtube"><i class="bx bxl-youtube"></i></a> <a href="https://www.instagram.com/nuv.cc/" class="instagram"><i class="bx bxl-instagram"></i></a> </div> </div> </section><!-- End Hero -->
+  
+  <!-- End Hero -->
 
-  <main id="main">
+ 
 
+<style>
+ 
+
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+.video-container {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+.video-container video {
+	min-width: 100%;
+	min-height: 100%;
+  position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.video-container:after {
+	content: '';
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+}
+
+</style>
+<section class="d-flex flex-column justify-content-center">
+  <div class="video-container">
+    <video src="assets/img/BQQT1084.MP4" autoplay muted loop></video>
+  </div><br><br><br><br><br><br><br>
+  <center><div class="container" data-aos="zoom-in" data-aos-delay="100">
+    <h1 style="font-size: 4.5rem; color: #0e76a8;"><b>NUV युवा 2024</b></h1> 
+    <p style="font-size: 2.5rem;"><a class="btn gradient-bg" href="#">register now </a>
+      <span style="color: #0e76a8;" class="typed" data-typed-items="Tech Events, E-Sports Events,Sports Events, Cultural Events,CONCERT NIGHT"></span></p>
+       <div class="social-links">
+         <a href="https://www.linkedin.com/in/nuv-cultural-committee/" class="linkedin"><i class="bx bxl-linkedin"></i></a>&nbsp;&nbsp;
+         <a href="https://www.youtube.com/@NUVCulturalCommittee" class="youtube"><i class="bx bxl-youtube"></i></a> &nbsp;&nbsp;
+         <a href="https://www.instagram.com/nuv.cc/" class="instagram"><i class="bx bxl-instagram"></i></a> 
+        </div> 
+  </div></center>
+</section><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <!-- End Hero -->
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
       <div class="container" data-aos="fade-up">
